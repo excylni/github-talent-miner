@@ -1,0 +1,121 @@
+==================== 2026-06-20T10:10:27.650315Z | 019ee482-a4b1-71b1-9866-f3a5441a1d9d ====================
+10:10:27.652879 [info ]: Installing dbt project and profile setup
+10:10:27.663561 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+10:10:27.665169 [info ]: Success Project created successfully!
+10:10:27.665491 [info ]: Info Project name: jaffle_shop
+10:10:27.665522 [info ]: Info Project directory: jaffle_shop
+10:10:27.665955 [info ]: Info Setting up your profile...
+10:10:27.667693 [info ]: Info Creating new profile...
+10:11:02.701033 [info ]: No dbt_cloud.yml found - proceeding without cloud pre-population
+10:15:21.808829 [info ]: Success Profile written to /Users/excylni/.dbt/profiles.yml
+10:15:21.810036 [info ]: Validating profile inputs, adapters, and connection
+
+10:15:21.810077 [info ]: dbt-core 2.0.0-alpha.2
+10:15:21.815462 [info ]: Started loading project
+10:15:21.856144 [info ]: Loading ~/.dbt/profiles.yml
+10:15:21.869684 [info ]: Finished loading project [  0.05s]
+10:15:21.871711 [info ]: Started debugging
+10:15:21.873196 [info ]: Debugging profile: dev
+10:15:21.873252 [info ]: Debugging dbt version: 2.0.0-alpha.2
+10:15:21.873275 [info ]: Debugging platform: macos x86_64 (unix)
+10:15:21.873798 [info ]: Debugging adapter type: snowflake (remote)
+10:15:23.017102 [info ]: Debugging dependencies:
+  git: OK
+10:15:23.020056 [info ]: Debugging connection:
+  "account": "mammbo",
+  "user": "mammbo",
+  "database": "LATEST_DEV_UPLOADS",
+  "warehouse": "TALENT_MINER_WH",
+  "schema": "TALENT_MINER_DB.RAW"
+10:15:29.714627 [info ]: Finished debugging [  7.84s]
+10:15:29.717570 [error]: [AuthenticationFailed (dbt1011)]: dbt was unable to connect to the specified database.
+The following error was returned:
+
+[Snowflake] 261004 (08004): failed to auth for unknown reason. HTTP: 404, URL: https://mammbo.snowflakecomputing.com:443/session/v1/login-request?databaseName=LATEST_DEV_UPLOADS&requestId=3d8be34b-8407-4ad7-4740-749c1a9edf22&request_guid=1c9c6cf5-13d9-4292-59f3-51495d609b47&schemaName=TALENT_MINER_DB.RAW&warehouse=TALENT_MINER_WH
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/core/connect-data-platform/connection-profiles
+10:15:29.780591 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error for target 'dev' [5m 2s]
+==================== 2026-06-20T10:15:55.961271Z | 019ee487-a735-73b1-99bb-f9a2aaf71624 ====================
+10:15:55.962072 [info ]: Installing dbt project and profile setup
+10:15:55.963214 [info ]: Warning Directory 'jaffle_shop' already exists, using 'jaffle_shop_1' instead
+10:15:55.970009 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+10:15:55.970159 [info ]: Success Project created successfully!
+10:15:55.970189 [info ]: Info Project name: jaffle_shop_1
+10:15:55.970217 [info ]: Info Project directory: jaffle_shop_1
+10:15:55.970337 [info ]: Info Setting up your profile...
+10:15:55.970827 [info ]: Loading ~/.dbt/profiles.yml
+10:15:55.974015 [info ]: Info Creating new profile...
+10:15:57.264045 [info ]: No dbt_cloud.yml found - proceeding without cloud pre-population
+10:18:04.573752 [info ]: Success Profile written to /Users/excylni/.dbt/profiles.yml
+10:18:04.574284 [info ]: Validating profile inputs, adapters, and connection
+
+10:18:04.574341 [info ]: dbt-core 2.0.0-alpha.2
+10:18:04.575864 [info ]: Started loading project
+10:18:04.588787 [info ]: Loading ~/.dbt/profiles.yml
+10:18:04.592394 [info ]: Finished loading project [  0.02s]
+10:18:04.593125 [info ]: Started debugging
+10:18:04.594210 [info ]: Debugging profile: dev
+10:18:04.594263 [info ]: Debugging dbt version: 2.0.0-alpha.2
+10:18:04.594289 [info ]: Debugging platform: macos x86_64 (unix)
+10:18:04.594339 [info ]: Debugging adapter type: snowflake (remote)
+10:18:04.666802 [info ]: Debugging dependencies:
+  git: OK
+10:18:04.667641 [info ]: Debugging connection:
+  "account": "wzaerma-dn39753",
+  "user": "mammbo",
+  "database": "TALENT_MINER_DB",
+  "warehouse": "TALENT_MINER_DB.RAW",
+  "schema": "TALENT_MINER_DB.RAW"
+10:18:05.606785 [info ]: Finished debugging [  1.01s]
+10:18:05.607670 [error]: [AuthenticationFailed (dbt1011)]: dbt was unable to connect to the specified database.
+The following error was returned:
+
+[Snowflake] 390100 (08004): Incorrect username or password was specified.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/core/connect-data-platform/connection-profiles
+10:18:05.704992 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error for target 'dev' [2m 10s]
+==================== 2026-06-20T10:18:17.617209Z | 019ee489-d08c-7342-b2c2-6501e22d9464 ====================
+10:18:17.617802 [info ]: Installing dbt project and profile setup
+10:18:17.618785 [info ]: Warning Directory 'jaffle_shop' already exists, using 'jaffle_shop_2' instead
+10:18:17.624722 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+10:18:17.624861 [info ]: Success Project created successfully!
+10:18:17.624892 [info ]: Info Project name: jaffle_shop_2
+10:18:17.624919 [info ]: Info Project directory: jaffle_shop_2
+10:18:17.625045 [info ]: Info Setting up your profile...
+10:18:17.625563 [info ]: Loading ~/.dbt/profiles.yml
+10:18:17.628873 [info ]: Info Creating new profile...
+10:18:18.712582 [info ]: No dbt_cloud.yml found - proceeding without cloud pre-population
+10:20:07.704242 [info ]: Success Profile written to /Users/excylni/.dbt/profiles.yml
+10:20:07.704858 [info ]: Validating profile inputs, adapters, and connection
+
+10:20:07.704943 [info ]: dbt-core 2.0.0-alpha.2
+10:20:07.706672 [info ]: Started loading project
+10:20:07.718756 [info ]: Loading ~/.dbt/profiles.yml
+10:20:07.722293 [info ]: Finished loading project [  0.02s]
+10:20:07.723040 [info ]: Started debugging
+10:20:07.723947 [info ]: Debugging profile: dev
+10:20:07.723988 [info ]: Debugging dbt version: 2.0.0-alpha.2
+10:20:07.724010 [info ]: Debugging platform: macos x86_64 (unix)
+10:20:07.724056 [info ]: Debugging adapter type: snowflake (remote)
+10:20:07.798983 [info ]: Debugging dependencies:
+  git: OK
+10:20:07.799788 [info ]: Debugging connection:
+  "account": "wzaerma-dn39753",
+  "user": "mammbo",
+  "database": "TALENT_MINER_DB",
+  "warehouse": "TALENT_MINER_WH",
+  "schema": "TALENT_MINER_DB.RAW"
+10:20:09.721564 [debug]: Query executed on node unknown:
+select 1 as id
+10:20:09.725108 [info ]: Debugging connection test: OK
+10:20:09.725230 [info ]: Debugged All checks passed!
+10:20:09.725388 [info ]: Finished debugging [  2.00s]
+10:20:09.784369 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' successfully for target 'dev' [1m 52s]
