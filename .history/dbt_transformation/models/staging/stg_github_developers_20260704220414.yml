@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: stg_github_developers
+    description: "Cleaned and deduplicated GitHub developer profiles"
+  
+    columns:
+     - name: id
+       description: "GitHub user ID, must be unique and never null"
+       tests:
+          - unique
+          - not_null
+     - name

@@ -133,7 +133,7 @@ def saving_data(city: str, raw_data: list[dict], validated_data: list[GitHubUser
 
 if __name__ == "__main__":
     miner = GitHubMiner()
-    for city in ["Karlsruhe", "Munich", "Heidelberg", "Frankfurt"]:
+    for city in ["Karlsruhe", "Munich", "Heidelberg"]:
         raw_data, validated_data = miner.fetch_developers_by_location(location=city, max_pages=20)
         print(f"Successfully fetched {len(validated_data)} profiles inside {city}.\n")
         saving_data(city, raw_data, validated_data)

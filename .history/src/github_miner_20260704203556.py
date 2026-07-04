@@ -129,7 +129,7 @@ def saving_data(city: str, raw_data: list[dict], validated_data: list[GitHubUser
     df.to_parquet(processed_path, index=False, compression="snappy")
     print(f"Optimized Parquet saved to: {processed_path}")
     
-
+`
 
 if __name__ == "__main__":
     miner = GitHubMiner()

@@ -1,0 +1,18 @@
+
+
+- name: mart_companies
+  description: "Aggregated developer counts and stats grouped by company"
+  columns: 
+   - name: company
+     description: "Cleaned company name"
+     tests: 
+       - unique
+       - not_null
+   - name: developer_count
+     description: "Number of unique developers at this company"
+     tests:
+       - not_null 
+- name: mart_location 
+  description: "Aggregated developer counts grouped by city"
+  columns:
+   - 

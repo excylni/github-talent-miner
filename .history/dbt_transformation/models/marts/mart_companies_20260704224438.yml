@@ -1,0 +1,5 @@
+- name: mart_companies
+  description: "Aggregated developer counts and stats grouped by company"
+  columns: 
+   - name: company
+     description: "Cleaned company name"
