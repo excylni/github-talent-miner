@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: raw
+    database: TALENT_MINER_DB
+    schema: RAW
+    tables:
+      - name: github_developers
+        description: "Raw GitHub developer profiles fetched via API"
+        columns:
+          - name: id
+            description: "GitHub user ID"
+          - name: login
+            description: "GitHub username"
+          - name: company
+            description: "company field (raw, may contain @ prefix)"
+          - name: location
+            description: "Location field (raw, inconsistent format)"
+          - name: followers
+            description: "number of followers"
+          - name: public_repos
+            description: "number of public repositories"

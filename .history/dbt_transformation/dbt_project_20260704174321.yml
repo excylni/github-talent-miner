@@ -4,16 +4,9 @@ profile: dbt_transformation
 
 config-version: 2
 version: "1.0.0"
-
 clean-targets:
   - "target"
   - "dbt_packages"
 
 models:
-  dbt_transformation:
-    staging:
-      +materialized: view
-      +schema: STAGING
-    marts:
-      +materialized: table
-      +schema: MARTS
+  

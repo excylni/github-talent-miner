@@ -16,4 +16,4 @@ models:
       +schema: STAGING
     marts:
       +materialized: table
-      +schema: MARTS
+      +schema

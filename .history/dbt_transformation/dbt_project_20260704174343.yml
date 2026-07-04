@@ -11,9 +11,4 @@ clean-targets:
 
 models:
   dbt_transformation:
-    staging:
-      +materialized: view
-      +schema: STAGING
-    marts:
-      +materialized: table
-      +schema: MARTS
+    staging

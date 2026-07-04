@@ -1,0 +1,12 @@
+name: dbt_transformation
+
+profile: dbt_transformation
+
+config-version: 2
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  
