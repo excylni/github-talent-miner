@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: stg_github_developers
+    description: "Cleaned and deduplicated GitHub developer profiles"
+  
+    columns:
+     - name: id
+       description: "GitHub user ID, must be unique and never null"
+       tests:
+          - unique
+          - not_null
+     - name: login
+       description: "GitHub username - never null"
+       tests:
+          - not_null
+     - name: type
+       description: "GitHub account type - should only be User or Organization"
+       tests:
+          - accepted_values:
+              arguments:
+              values: ["User", "Organization"]
+     - name: followers
+       description: "Follower count - should never be negative"
+       tests:
+          - not_null
+     - name: company
+       description: "Cleaned company name - @ prefix stripped, nulls for empty"
+     - name: city
+       description: "Normalized city extracted from raw location string"
