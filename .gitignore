@@ -5,3 +5,5 @@ venv/
 .env.local
 __pycache__/
 *.pyc
+.history
+.pytest_cache

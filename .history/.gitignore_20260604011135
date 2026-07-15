@@ -1,7 +1,0 @@
-# Ignore python virtual environments for now
-venv/
-.venv/
-.env
-.env.local
-__pycache__/
-*.pyc
