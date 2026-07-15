@@ -7,7 +7,7 @@ Because of unemployement and curiosity I made a data engineering project that sc
 ## RESULTS
 
 ![Ecosystem](images/ecosystem.png)
-*Figure 1: On the left average followers per developer with his main language.*
+*Figure 1: On the right average followers per developer with his main language.*
 
 ![Companies](images/companies.png)
 *Figure 2: Most common companies that employ people*
@@ -178,3 +178,5 @@ This project covered the full data engineering stack from scratch:
 - dbt's staging/marts pattern and why separating raw from clean data matters
 - Writing dbt tests to enforce data quality automatically
 - Building an interactive Streamlit dashboard on top of a live data warehouse
+
+Overall it was a fun project where I really got to know a basic workflow of a Data Engineer.
